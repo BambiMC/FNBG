@@ -1,0 +1,54 @@
+Customer Control Panel(https://www.customercontrolpanel.de):
+
+Benutzername: 174428
+Passwort: MTQLLL2jSS#
+
+
+
+Webhosting Control Panel(https://ae840.webhosting.systems):
+
+Benutzername: k174428
+Passwort: dock%E926!
+
+
+FTP(Windows):
+Adresse: ftp://fnbg.de
+Benutzername: hosting166060
+Passwort: dock%E926!
+
+Netcup Forum:
+Benutzername: Bamberger
+Email: me@fnbg.de
+Kennwort: dock%E926!
+
+SSH Zugang: (/FileZilla)
+IP/Server: 202.61.232.64
+(IPv6: 2a03:4000:30:fd60::16:6060)
+hostname/Benutzername: hosting166060
+Passwort: dock%E926!
+Port: leer
+
+
+
+Webmailserver: 
+Email Adresse:me@fnbg.de
+Passwort: dock%E926!
+Alle Server: mxe842.netcup.net
+
+Neuen Webmailserver einrichten:
+DOCROOT: /var/www/vhosts/hosting166060.ae840.netcup.net/m.fnbg.de/httpdocs
+des_key: Gv4A#Aw3z2W§tyVrA#wK$!xg
+
+
+
+
+
+----------------------------------------
+SSH mit Powershell:
+ssh hosting166060@2a03:4000:30:fd60::16:6060
+dock%E926!
+
+
+
+Skript um Composer zu installieren:
+https://forum.netcup.de/sonstiges/sonstige-anwendungen/10804-composer-installieren/

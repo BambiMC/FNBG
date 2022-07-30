@@ -1,0 +1,5 @@
+-container nehmen immer den maximalen Platz ein, der Ihnen möglich ist!
+-oberstes body element sollte immer einen container haben, wird an alle Kinder vererbt.
+-text-center funktioniert!
+-d-flex nimmt maximalen platz ein, d-inline-flex nimmt minimalen Platz ein
+-d-flex vererbt sich nicht

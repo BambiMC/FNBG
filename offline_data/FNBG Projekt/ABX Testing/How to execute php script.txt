@@ -1,0 +1,2 @@
+php abuniverse_inject.php --val1="0" --val2="1" --val3="1" --val4="0" --val5="0" --val6="1"
+php abuniverse_inject.php "0" "1" "1" "0" "0" "1" //funktioniert, schaut aber echt nicht geil aus
