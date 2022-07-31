@@ -10,33 +10,6 @@
     <link rel="stylesheet" href="./res/fnbg.css">
     <link rel="icon" type="image/x-icon" href="./res/favicon.ico">
     <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <script type="text/javascript">
-        function sendEmail2() {
-            Email.send({
-                SecureToken: "b3f289de-d89d-41e1-ad24-92d55f8b4b5e",
-                To: 'me@fnbg.de',
-                From: "burner@fnbg.de",
-                Subject: "This is the subject",
-                Body: "And this is the body"
-            }).then(
-                message => alert(message)
-            );
-        }
-
-        function sendEmail() {
-            Email.send({
-                Host: "smtp.elasticemail.com",
-                Username: "me@fnbg.de",
-                Password: "dock%E926!",
-                To: 'burner@fnbg.de',
-                From: "me@fnbg.de",
-                Subject: "Test email",
-                Body: "<html><h2>Header</h2><strong>Bold text</strong><br></br><em>Italic</em></html>"
-            }).then(
-                message => alert(message)
-            );
-        }
-    </script>
 </head>
 
 <!--FIXME do box shadow-->
@@ -96,11 +69,36 @@
         </div>
 
         <div class="p-3 m-3" id="Platzhalter">
-            <input class="" type="button" value="Send Email" onclick="sendEmail()">
-            <?php echo 'Wohingegen das hier geparst wird.'; ?>
+            <input class="" name="wasnescheisse" type="button">
+            <input type="submit" name="submit">
+
+            <?php
+            if (isset($_GET['submit'])) {
+                echo "<script type='text/javascript'>alert('Some answer');</script>";
+
+                $content = "From: NAME \n Email: EMAIL \n Message: MESSAGE";
+                $recipient = "me@fnbg.de";
+                $mailheader = "From: EMAIL \r\n";
+                mail($recipient, $subject, $content, $mailheader) or die("Error!");
+                echo "Email sent!";
+                
+                //Hier weitermachen, ich muss versuchen das mit ajax zu machen, das ist sonst alles nicht so sinnvoll
+                //kann ich das mit git in einem continous integration workflow machen
+            }
+            ?>
         </div>
 
         <div>
+            <?php
+            if (isset($_POST['name']))
+                $name = $_POST['name'];
+            if (isset($_POST['email']))
+                $email = $_POST['email'];
+            if (isset($_POST['message']))
+                $message = $_POST['message'];
+            if (isset($_POST['subject']))
+                $subject = $_POST['subject'];
+            ?>
 
         </div>
 
