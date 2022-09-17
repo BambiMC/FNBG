@@ -1,0 +1,109 @@
+:root[color-mode="dark"] {
+    --fnbg-purple: #8774E1;
+    --fnbg-orange: #FB923C;
+    --fnbg-text-opacity: 1;
+    --bg-main: #242424;
+    --bg-accent: #181818;
+    --bg-accent2: #303030;
+}
+
+:root[color-mode="light"] {
+    --fnbg-purple: #303030;
+    --fnbg-orange: #101010;
+    --fnbg-text-opacity: 1;
+    --bg-main: #eee3ff;
+    --bg-accent: #cfcfcf;
+    --bg-accent2: #a297d3;
+}
+
+:root[color-mode="light"] .dark {
+    display: none;
+}
+
+ :root[color-mode="dark"] .light {
+    display: none;
+}
+
+.btn-outline-purple {
+    color: var(--fnbg-purple);
+    border-color: var(--fnbg-purple);
+}
+
+.btn-outline-purple:hover {
+    color: #000000;
+    background-color: var(--fnbg-purple);
+    border-color: var(--fnbg-purple);
+}
+
+.text-purple {
+    color: var(--fnbg-purple);
+}
+
+.btn-orange {
+    color: var(--fnbg-orange);
+    background-color: var(--bg-accent2);
+}
+
+.btn-orange:hover,
+btn-orange-darker:hover {
+    color: var(--fnbg-orange);
+    background-color: var(--bg-main);
+    border-color: var(--fnbg-orange);
+}
+
+.btn-orange-darker {
+    color: var(--fnbg-orange);
+    background-color: var(--bg-main);
+}
+
+.btn-orange-darker:hover {
+    color: var(--fnbg-orange);
+    background-color: var(--bg-main);
+    border-color: var(--fnbg-orange);
+}
+
+body {
+    background-color: var(--bg-main);
+}
+
+nav,
+footer {
+    background-color: var(--bg-accent);
+}
+
+.bg-accent2 {
+    background-color: var(--bg-accent2);
+}
+
+.text-orange {
+    --bs-text-opacity: 1;
+    color: var(--fnbg-orange) !important;
+}
+
+.outline {
+    box-sizing: border-box;
+    outline: 1px solid var(--fnbg-purple) !important;
+}
+
+
+/** {
+    box-sizing: border-box;
+    outline: 1px solid black !important;
+}*/
+
+
+/*img {
+    object-fit: cover;
+    width: 100%;
+    display: block;
+    height: auto;
+}*/
+
+a:hover {
+    color: #909090 !important;
+}
+
+#logo {
+    width: 150px;
+    height: auto;
+}

@@ -3,3 +3,16 @@
 -text-center funktioniert!
 -d-flex nimmt maximalen platz ein, d-inline-flex nimmt minimalen Platz ein
 -d-flex vererbt sich nicht
+-button in bootstrap: <a class="btn ...
+
+
+
+
+
+
+
+
+
+
+ui/ux:
+-Toggles sollten zeigen was passieren wird beim Drücken
