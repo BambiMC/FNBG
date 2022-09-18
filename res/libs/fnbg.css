@@ -5,6 +5,7 @@
     --bg-main: #242424;
     --bg-accent: #181818;
     --bg-accent2: #303030;
+    --cursor: #777777;
 }
 
 :root[color-mode="light"] {
@@ -12,8 +13,9 @@
     --fnbg-orange: #101010;
     --fnbg-text-opacity: 1;
     --bg-main: #eee3ff;
-    --bg-accent: #cfcfcf;
-    --bg-accent2: #a297d3;
+    --bg-accent: #d3d0df;
+    --bg-accent2: #c5bcf3;
+    --cursor: #000000;
 }
 
 :root[color-mode="light"] .dark {
@@ -42,6 +44,7 @@
 .btn-orange {
     color: var(--fnbg-orange);
     background-color: var(--bg-accent2);
+    border-color: #181818;
 }
 
 .btn-orange:hover,
@@ -51,15 +54,54 @@ btn-orange-darker:hover {
     border-color: var(--fnbg-orange);
 }
 
+.btn-orange,
+.btn-orange:hover,
+.btn-orange:focus+.btn-orange,
+.btn-orange:focus,
+.btn-orange:active+.btn-orange,
+.btn-orange:checked+.btn-orange,
+.btn-orange.active,
+.btn-orange:active,
+.show>.btn-orange.dropdown-toggle,
+.btn-orange:active+.btn-orange:focus,
+.btn-orange:checked+.btn-orange:focus,
+.btn-orange.active:focus,
+.btn-orange:active:focus,
+.show>.btn-orange.dropdown-toggle:focus,
+.btn-orange.disabled,
+.btn-orange:disabled {
+    box-shadow: #4b1e00 !important;
+}
+
 .btn-orange-darker {
     color: var(--fnbg-orange);
     background-color: var(--bg-main);
+    border-color: #202020;
 }
 
 .btn-orange-darker:hover {
     color: var(--fnbg-orange);
     background-color: var(--bg-main);
     border-color: var(--fnbg-orange);
+}
+
+.btn-orange-darker,
+.btn-orange-darker:hover,
+.btn-orange-darker:focus+.btn-orange-darker,
+.btn-orange-darker:focus,
+.btn-orange-darker:active+.btn-orange-darker,
+.btn-orange-darker:checked+.btn-orange-darker,
+.btn-orange-darker.active,
+.btn-orange-darker:active,
+.show>.btn-orange-darker.dropdown-toggle,
+.btn-orange-darker:active+.btn-orange-darker:focus,
+.btn-orange-darker:checked+.btn-orange-darker:focus,
+.btn-orange-darker.active:focus,
+.btn-orange-darker:active:focus,
+.show>.btn-orange-darker.dropdown-toggle:focus,
+.btn-orange-darker.disabled,
+.btn-orange-darker:disabled {
+    box-shadow: #4b1e00 !important;
 }
 
 body {
@@ -69,6 +111,7 @@ body {
 nav,
 footer {
     background-color: var(--bg-accent);
+    box-shadow: 0px 2px 5px hsla(0, 0%, 0%, 0.2);
 }
 
 .bg-accent2 {
@@ -106,4 +149,20 @@ a:hover {
 #logo {
     width: 150px;
     height: auto;
+}
+
+input,
+textarea {
+    background-color: var(--bg-accent2) !important;
+    border-color: var(--bg-accent) !important;
+    /*box-shadow: 0px 2px 5px hsla(0, 0%, 0%, 0.2) !important;*/
+    caret-color: var(--cursor) !important;
+}
+
+input,
+select,
+textarea,
+textarea:focus,
+input:focus {
+    color: var(--cursor) !important;
 }

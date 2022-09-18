@@ -20,16 +20,69 @@
         }
     </script>
 
+
+    <script>
+        function sendContact() {
+            var valid;
+            valid = validateContact();
+            if (valid) {
+                jQuery.ajax({
+                    url: "contact_mail.php",
+                    data: 'userName=' + $("#userName").val() + '&userEmail=' +
+                        $("#userEmail").val() + '&subject=' +
+                        $("#subject").val() + '&content=' +
+                        $(content).val(),
+                    type: "POST",
+                    success: function(data) {
+                        $("#mail-status").html(data);
+                    },
+                    error: function() {}
+                });
+            }
+        }
+
+        function validateContact() {
+            var valid = true;
+            /*$(".demoInputBox").css('background-color', '');
+            $(".info").html('');
+            if (!$("#userName").val()) {
+                $("#userName-info").html("(required)");
+                $("#userName").css('background-color', '#FFFFDF');
+                valid = false;
+            }
+            if (!$("#userEmail").val()) {
+                $("#userEmail-info").html("(required)");
+                $("#userEmail").css('background-color', '#FFFFDF');
+                valid = false;
+            }
+            if (!$("#userEmail").val().match(/^([\w-\.]+@([\w-]+\.)+[\w-]{2,4})?$/)) {
+                $("#userEmail-info").html("(invalid)");
+                $("#userEmail").css('background-color', '#FFFFDF');
+                valid = false;
+            }
+            if (!$("#subject").val()) {
+                $("#subject-info").html("(required)");
+                $("#subject").css('background-color', '#FFFFDF');
+                valid = false;
+            }
+            if (!$("#content").val()) {
+                $("#content-info").html("(required)");
+                $("#content").css('background-color', '#FFFFDF');
+                valid = false;
+            }*/
+            return valid;
+        }
+    </script>
+
     <link rel="stylesheet" href="res/libs/bootstrap.min.css">
     <link rel="stylesheet" href="res/libs/fnbg.css">
     <link rel="icon" type="image/x-icon" href="res/favicon.ico">
+    <script src="res/libs/jquery-3.6.0.min.js"></script>
 </head>
-
-<!--FIXME do box shadow-->
 
 <body>
 
-    <nav class="navbar navbar-expand justify-content-around" style="box-shadow: 0px 2px 5px #101010;">
+    <nav class="navbar navbar-expand justify-content-around">
         <div class="me-2 justify-content-start flex-wrap d-inline-flex">
             <a class="btn btn-orange m-1 disabled" href="./projects">Projekte</a>
             <a class="btn switch-theme-btn">
@@ -47,10 +100,6 @@
     </nav>
 
     <main class="container py-5" id="fnbg-content">
-
-
-
-
 
         <div class="row">
             <img src="./res/FabianBergerWasserfall.jpeg" alt="Ein Bild von mir vor den Krimmler Wasserfällen" class="col-7 d-flex modal-body">
@@ -70,7 +119,7 @@
                 </div>
             </div>
             <div class="row-4 d-block d-md-none ">
-                <div class="bg-accent2 text-orange p-2 mt-2" style="box-shadow: 0px 5px 15px 3px hsla(0, 0%, 0%, 0.2);">
+                <div class="bg-accent2 text-orange p-2 mt-2">
 
                     <h2>Damit Ihre Kunden keine Beta-Tester werden!</h2>
                     <ul>
@@ -87,39 +136,31 @@
             </div>
         </div>
 
-        <div class="p-3 m-3">
-            <input type="submit" name="submit">
+        <div class="w-50" id="formContact">
+            <div id="mail-status"></div>
+            <div class="form-group m-3">
+                <label class="text-orange">Name</label>
+                <input name="userName" type="text" class="form-control" spellcheck="false" id="userName">
+            </div>
+            <div class="form-group m-3">
+                <label class="text-orange">E-Mail</label>
+                <input name="userEmail" type="text" class="form-control" spellcheck="false" id="userEmail">
+            </div>
+            <div class="form-group m-3">
+                <label class="text-orange">Betreff</label>
+                <input name="subject" type="text" class="form-control" spellcheck="false" id="subject">
+            </div>
+            <div class="form-group m-3">
+                <label class="text-orange">Nachricht</label>
+                <textarea name="content" class="form-control" spellcheck="false" id="content" cols="60" rows="6"></textarea>
+            </div>
 
-            <?php
-            if (isset($_GET['submit'])) {
-                echo "<script type='text/javascript'>alert('Some answer');</script>";
+            <button name="submit" class="btn btn-orange mt-2" onClick="sendContact();">Absenden</button>
+            <button name="submit" class="btnAction" onClick="sendContact();">Send</button>
 
-                $content = "From: NAME \n Email: EMAIL \n Message: MESSAGE";
-                $recipient = "me@fnbg.de";
-                $mailheader = "From: EMAIL \r\n";
-                mail($recipient, $subject, $content, $mailheader) or die("Error!");
-                echo "Email sent!";
-
-                //Hier weitermachen, ich muss versuchen das mit ajax zu machen, das ist sonst alles nicht so sinnvoll
-            }
-            ?>
-        </div>
-
-        <div>
-            <?php
-            if (isset($_POST['name']))
-                $name = $_POST['name'];
-            if (isset($_POST['email']))
-                $email = $_POST['email'];
-            if (isset($_POST['message']))
-                $message = $_POST['message'];
-            if (isset($_POST['subject']))
-                $subject = $_POST['subject'];
-            ?>
         </div>
 
     </main>
-
 
     <footer class="footer">
         <div class="d-flex justify-content-around py-3 text-purple">
@@ -134,7 +175,10 @@
     </footer>
 
 
+
     <script src="res/libs/theme-toggle.js"></script>
+
+
 
 </body>
 
