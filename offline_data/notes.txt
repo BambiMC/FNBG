@@ -2,7 +2,7 @@
 -oberstes body element sollte immer einen container haben, wird an alle Kinder vererbt.
 -text-center funktioniert!
 -d-flex nimmt maximalen platz ein, d-inline-flex nimmt minimalen Platz ein
--d-flex vererbt sich nicht
+-d-flex(-inline) vererbt sich nicht
 -button in bootstrap: <a class="btn ...
 
 
