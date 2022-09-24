@@ -202,3 +202,8 @@ textarea {
 img:not(#logo) {
     border-radius: var(--radius-big) !important;
 }
+
+.spacer {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}

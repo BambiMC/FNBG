@@ -5,7 +5,7 @@
 
 <body>
 
-    <?php include 'res/comps/navbar.php'; ?>
+    <?php include 'res/comps/header.php'; ?>
 
     <main class="container py-5" id="fnbg-content">
 

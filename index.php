@@ -1,13 +1,18 @@
 <!DOCTYPE html>
 <html color-mode="light" lang="en">
 
-<!--TODO Verschiedene Sprachen implementieren ^^-->
+<!--TODO Verschiedene Sprachen implementieren-->
+<!--TODO Fotos per Explorer einfügen-->
+<!--TODO Neue Seiten hinzufügen-->
+<!--TODO Bilder Copyright checken-->
+<!--TODO Neue Section mit Code Background einfügen-->
+
 
 <?php include 'res/comps/head.php'; ?>
 
 <body>
 
-    <?php include 'res/comps/navbar.php'; ?>
+    <?php include 'res/comps/header.php'; ?>
 
     <main class="container py-5" id="fnbg-content">
 
@@ -16,7 +21,7 @@
         </div>
 
         <div class="row p-5">
-            <img src="./res/FabianBergerWasserfall.jpeg" alt="Ein Bild von mir vor den Krimmler Wasserfällen" class="col-7 d-flex modal-body">
+            <img src="./res/imgs/FabianBergerWasserfall.jpeg" alt="Ein Bild von mir vor den Krimmler Wasserfällen" class="col-7 d-flex modal-body">
             <div class="col-5 d-none d-md-block">
                 <div class="position-relative top-50 start-0 translate-middle bg-accent2 text-orange p-3" style="box-shadow: 0px 5px 15px 3px hsla(0, 0%, 0%, 0.2);">
                     <h2>Damit Ihre Kunden keine Beta-Tester werden!</h2>
