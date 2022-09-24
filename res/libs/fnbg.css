@@ -7,6 +7,8 @@
     --bg-accent: #181818;
     --bg-accent2: #303030;
     --cursor: #777777;
+    --radius-big: 0;
+    --radius-small: 0;
 }
 
 :root[color-mode="light"] {
@@ -18,6 +20,8 @@
     --bg-accent: #d3d0df;
     --bg-accent2: #c5bcf3;
     --cursor: #000000;
+    --radius-big: 50px;
+    --radius-small: 20px;
 }
 
 :root[color-mode="light"] .dark {
@@ -120,6 +124,20 @@ footer {
     box-shadow: 0px 2px 5px hsla(0, 0%, 0%, 0.2);
 }
 
+
+/*nav {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}*/
+
+
+/*footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}*/
+
 .bg-accent2 {
     background-color: var(--bg-accent2);
 }
@@ -148,7 +166,8 @@ footer {
     height: auto;
 }*/
 
-a:hover {
+a:hover,
+button:hover {
     color: #909090 !important;
 }
 
@@ -171,4 +190,15 @@ textarea,
 textarea:focus,
 input:focus {
     color: var(--cursor) !important;
+}
+
+button,
+div,
+input,
+textarea {
+    border-radius: var(--radius-small) !important;
+}
+
+img:not(#logo) {
+    border-radius: var(--radius-big) !important;
 }
