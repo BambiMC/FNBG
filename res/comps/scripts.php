@@ -80,5 +80,3 @@
         mobileMenu.classList.toggle('hidden');
     });
 </script>
-
-<script src="matter.js"></script>
