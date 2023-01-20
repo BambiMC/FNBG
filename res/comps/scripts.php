@@ -12,7 +12,6 @@
 
     function sendContact() {
         var valid;
-        alert("asd");
         valid = validateContact();
         if (valid) {
             jQuery.ajax({
@@ -33,7 +32,11 @@
     function validateContact() {
         var valid = true;
 
-        //TODO enable client sided check if textboxes have valid content for sending contact form
+        //php function to validate email
+        $email = test_input($_POST["email"]);
+        if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+            $emailErr = "Invalid email format";
+        }
 
 
         /*$(".demoInputBox").css("background-color", "");

@@ -22,9 +22,11 @@
                     <h1 class="text-5xl font-bold text-center">Welcome to my Website!</h1>
                     <p class="text-2xl text-center">Here you can find some information about me and my projects.</p>
                 </div>
+
+
             </section>
 
-
+            <?php include 'res/comps/contact_form.php'; ?>
 
         </main>
     </main>
