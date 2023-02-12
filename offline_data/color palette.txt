@@ -1,3 +1,0 @@
-    --fnbg-purple: #8774E1
-    --fnbg-orange: #FB923C
-    --logo-color: #404040

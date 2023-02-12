@@ -1,0 +1,82 @@
+:root[color-mode="dark"] {
+  --fnbg-purple: #8774e1;
+  --fnbg-orange: #fb923c;
+  --fnbg-text-opacity: 1;
+  --bg-body: #242424;
+  --bg-main: #242424;
+  --bg-accent: #181818;
+  --bg-accent2: #303030;
+  --cursor: #777;
+  --radius-big: 0;
+  --radius-small: 0;
+}
+
+:root[color-mode="light"] {
+  --fnbg-purple: #303030;
+  --fnbg-orange: #101010;
+  --fnbg-text-opacity: 1;
+  --bg-body: #eee3ff;
+  --bg-main: #eee3ff;
+  --bg-accent: #d3d0df;
+  --bg-accent2: #c5bcf3;
+  --cursor: #000;
+  --radius-big: 50px;
+  --radius-small: 20px;
+}
+
+:root[color-mode="light"] .dark {
+  display: none;
+}
+
+:root[color-mode="dark"] .light {
+  display: none;
+}
+
+* {
+  transition: all 0.4s ease;
+}
+
+/**Text*/
+
+.unselectable {
+  -webkit-user-select: none;
+  /* Safari */
+  -moz-user-select: none;
+  /* Firefox */
+  -ms-user-select: none;
+  /* Internet Explorer/Edge */
+  user-select: none;
+  /* Standard */
+}
+
+body {
+  background-color: var(--bg-body);
+}
+
+main {
+  /*background-color: var(--bg-main);*/
+  position: relative;
+}
+
+.outline {
+  box-sizing: border-box;
+  outline: 1px solid var(--fnbg-purple) !important;
+}
+
+.spacer {
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+svg > line {
+  stroke: var(--fnbg-purple);
+  fill: var(--fnbg-purple);
+  color: var(--fnbg-purple);
+}
+
+#sun > path,
+#moon > path {
+  fill: var(--fnbg-purple);
+  color: var(--fnbg-purple);
+  stroke: var(--fnbg-purple);
+}

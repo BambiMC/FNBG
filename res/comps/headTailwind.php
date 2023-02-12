@@ -8,6 +8,7 @@
     <!-- Include tailwindcss-->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="res/libs/fnbgTailwind.css">
+    <link rel="stylesheet" href="res/libs/fnbgTailwindDefaults.css">
     <link rel="icon" type="image/x-icon" href="res/favicon.ico">
 
     <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>

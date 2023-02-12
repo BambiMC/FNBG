@@ -12,7 +12,7 @@
         <input name="subject" type="text" class="form-control" spellcheck="false" id="subject">
     </div>
     <div class="m-3 form-group">
-        <label class="text-orange">Nachricht</label>
+        <label class="text-orange align-top">Nachricht</label>
         <textarea name="content" class="form-control" spellcheck="false" id="content" cols="60" rows="6"></textarea>
     </div>
 

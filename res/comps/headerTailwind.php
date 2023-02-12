@@ -1,4 +1,4 @@
-<nav class="px-4 py-1">
+<nav class="px-4 py-1 z-10 fixed w-full">
   <div class="flex items-center justify-between">
     <a href="#">
       <img class="h-16" src="./res/svg/fnbg-logo7.svg" alt="" id="logo">

@@ -1,5 +1,5 @@
 <footer>
-    <div class="flex justify-around py-3 text-purple">
+    <div class="flex justify-around py-3 text-purple relative">
         <div class="">
             Fabian Berger<br>Ratiborer Straße 2<br>91058 Erlangen
         </div>
