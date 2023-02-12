@@ -6,31 +6,20 @@
 <!--TODO Neue Seiten hinzufügen-->
 <!--TODO Bilder Copyright checken-->
 <!--TODO Neue Section mit Code Background einfügen-->
+<!--TODO Bilder Gallerie impl. -->
 
 
-<?php include 'res/comps/headTailwind.php'; ?>
+<?php include 'res/comps/head.php'; ?>
 
 <body class="z-0">
 
-    <?php include 'res/comps/headerTailwind.php'; ?>
+    <?php include 'res/comps/header.php'; ?>
 
     <div class="container2 -z-10 unselectable .rainbow-text" style="position: fixed">
 
 
         <?php
-        $symbols = [
-            "□",
-            "█",
-            "▲",
-            "◊",
-            "░",
-            "▒",
-            "▓",
-            "▼",
-            "◉",
-            "◑",
-            "◖",
-            
+        $symbols = ["□","█","▲","◊","░","▒","▓","▼","◉","◑","◖",
         ];
         for ($i = 0; $i < 20; $i++) {
             $left = rand(0, 100) . "%";
@@ -73,7 +62,7 @@
 
 </body>
 
-<?php include 'res/comps/footerTailwind.php'; ?>
+<?php include 'res/comps/footer.php'; ?>
 
 <?php include 'res/comps/scripts.php'; ?>
 
