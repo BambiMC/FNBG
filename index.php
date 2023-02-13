@@ -19,7 +19,8 @@
 
 
         <?php
-        $symbols = ["□","█","▲","◊","░","▒","▓","▼","◉","◑","◖",
+        $symbols = [
+            "□", "█", "▲", "◊", "░", "▒", "▓", "▼", "◉", "◑", "◖",
         ];
         for ($i = 0; $i < 20; $i++) {
             $left = rand(0, 100) . "%";
@@ -30,24 +31,37 @@
         }
         ?>
     </div>
-    
+
 
     <div class="flex items-center justify-center h-full h-screen relative">
-      <div class="text-5xl text-center">
-        Welcome!<br>
-        Fabian Berger
+        <div class="text-5xl text-center">
 
-      </div>
+        </div>
+        <div class="flex flex-col items-center justify-center">
+            <h1 class="text-5xl font-bold text-center m-5">
+                Die perfekte Leinwand um etwas Einzigartiges zu erschaffen!
+            </h1>
+            <button class="btn" id="PartyModeButton">Probiers aus! ^^</button>
+
+            <script>
+                const button = document.getElementById('PartyModeButton');
+                button.addEventListener('click', randomFunction);
+
+                function randomFunction() {
+
+                }
+            </script>
+        </div>
     </div>
 
 
-    <main class="container mx-auto">
+    <main class="container mx-auto p-10">
 
 
 
         <section>
             <div class="flex flex-col items-center justify-center">
-                <h1 class="text-5xl font-bold text-center">Welcome to my Website!</h1>
+                <h1 class="text-5xl font-bold text-center"></h1>
                 <p class="text-2xl text-center">Here you can find some information about me and my projects.</p>
             </div>
 
@@ -56,7 +70,7 @@
 
         <?php include 'res/comps/contact_form.php'; ?>
 
-    
+
     </main>
 
 
@@ -64,6 +78,5 @@
 
 <?php include 'res/comps/footer.php'; ?>
 
-<?php include 'res/comps/scripts.php'; ?>
 
 </html>

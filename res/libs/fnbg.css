@@ -30,7 +30,7 @@ button:hover,
 a:focus,
 button:focus,
 #logo:focus {
-  transform: scale(1.1);
+  transform: scale(1.08);
 }
 
 .container2 {
@@ -55,6 +55,24 @@ button:focus,
   100% {
     transform: translateY(0);
   }
+}
+
+button {
+  font-size: 16px;
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  border: 1px solid var(--bg-accent);
+  background-color: var(--bg-accent);
+  color: var(--cursor);
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-small);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+}
+button:hover {
+  background-color: var(--bg-accent2);
+  color: var(--cursor);
+  border: 1px solid var(--bg-accent2);
 }
 
 /*.btn-outline-purple {
