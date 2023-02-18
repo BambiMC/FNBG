@@ -61,9 +61,10 @@ function validateContact() {
   return valid;
 }
 
-let button = document.querySelector("[data-mobile-menu]");
-let mobileMenu = document.getElementById("mobile-menu");
+function toggleMobileMenu() {
+  document.getElementById("mobile-menu").classList.toggle("hidden");
+}
 
-button.addEventListener("click", function () {
-  mobileMenu.classList.toggle("hidden");
-});
+function randomFunction() {
+  alert("Hello World");
+}

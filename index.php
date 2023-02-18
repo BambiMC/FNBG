@@ -41,16 +41,7 @@
             <h1 class="text-5xl font-bold text-center m-5">
                 Die perfekte Leinwand um etwas Einzigartiges zu erschaffen!
             </h1>
-            <button class="btn" id="PartyModeButton">Probiers aus! ^^</button>
-
-            <script>
-                const button = document.getElementById('PartyModeButton');
-                button.addEventListener('click', randomFunction);
-
-                function randomFunction() {
-
-                }
-            </script>
+            <button class="btn" id="PartyModeButton" onclick="randomFunction()">Probiers aus! ^^</button>
         </div>
     </div>
 
