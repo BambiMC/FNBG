@@ -1,3 +1,15 @@
+function toggleMobileMenu() {
+  document.getElementById("mobile-menu").classList.toggle("hidden");
+}
+
+function randomFunction() {
+  const symbols = document.getElementsByClassName("symbol");
+
+  for (const element of symbols) {
+    element.classList.toggle("rainbow-text");
+  }
+}
+
 function sendContact() {
   var valid;
   valid = validateContact();
@@ -59,12 +71,4 @@ function validateContact() {
             valid = false;
         }*/
   return valid;
-}
-
-function toggleMobileMenu() {
-  document.getElementById("mobile-menu").classList.toggle("hidden");
-}
-
-function randomFunction() {
-  alert("Hello World");
 }

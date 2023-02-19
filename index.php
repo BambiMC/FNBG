@@ -15,8 +15,7 @@
 
     <?php include 'res/comps/header.php'; ?>
 
-    <div class="container2 -z-10 unselectable .rainbow-text" style="position: fixed">
-
+    <div class="container2 -z-10 unselectable" style="position: fixed">
 
         <?php
         $symbols = [
@@ -27,7 +26,7 @@
             $top = rand(0, 100) . "%";
             $delay = rand(-15, 0) . "s";
             $symbol = $symbols[array_rand($symbols)];
-            echo '<div class="symbol" style="left: ' . $left . '; top: ' . $top . '; animation-delay: ' . $delay . '">' . $symbol . '</div>';
+            echo '<div class="symbol" style="left: ' . $left . '; top: ' . $top . '; animation-delay: ' . $delay . '"; border-radius: 50%><p>' . $symbol . '</p></div>';
         }
         ?>
     </div>
@@ -37,11 +36,11 @@
         <div class="text-5xl text-center">
 
         </div>
-        <div class="flex flex-col items-center justify-center">
+        <div class="flex flex-col items-center justify-center" id="test">
             <h1 class="text-5xl font-bold text-center m-5">
                 Die perfekte Leinwand um etwas Einzigartiges zu erschaffen!
             </h1>
-            <button class="btn" id="PartyModeButton" onclick="randomFunction()">Probiers aus! ^^</button>
+            <button class="btn" onclick="randomFunction()">Probiers aus! ^^</button>
         </div>
     </div>
 
@@ -66,6 +65,8 @@
 
 
 </body>
+
+
 
 <?php include 'res/comps/footer.php'; ?>
 
