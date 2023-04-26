@@ -15,7 +15,7 @@ function sendContact() {
   valid = validateContact();
   if (valid) {
     jQuery.ajax({
-      url: "res/libs/contact_mail.php",
+      url: "res/php/contact_mail.php",
       data:
         "userName=" +
         $("#userName").val() +

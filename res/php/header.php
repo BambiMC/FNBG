@@ -1,10 +1,10 @@
 <nav class="px-4 py-1 z-10 fixed w-full">
   <div class="flex items-center justify-between">
-    <a href="#">
+    <a href="./index.php">
       <img class="h-16" src="./res/svg/fnbg-logo7.svg" alt="" id="logo">
     </a>
     <div class="hidden gap-2 md:flex">
-      <a href="#" class="px-5 py-3 text-purple">Projekte</a>
+      <a href="./projects.php" class="px-5 py-3 text-purple">Projekte</a>
       <a href="#" class="px-5 py-3 text-purple">Team</a>
       <a href="#" class="px-5 py-3 text-purple">me@fnbg.de</a>
       <a href="#" class="px-5 py-3 text-purple">LinkedIn</a>

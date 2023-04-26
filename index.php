@@ -9,13 +9,13 @@
 <!--TODO Bilder Gallerie impl. -->
 
 
-<?php include 'res/comps/head.php'; ?>
+<?php include 'res/php/head.php'; ?>
 
 <body class="z-0">
 
-    <?php include 'res/comps/header.php'; ?>
+    <?php include 'res/php/header.php'; ?>
 
-    <div class="container2 -z-10 unselectable" style="position: fixed">
+    <div class="container2 unselectable" style="position: fixed">
 
         <?php
         $symbols = [
@@ -31,23 +31,21 @@
         ?>
     </div>
 
+    <div class="flex items-center justify-center h-full h-screen relative ">
 
-    <div class="flex items-center justify-center h-full h-screen relative">
-        <div class="text-5xl text-center">
-
-        </div>
-        <div class="flex flex-col items-center justify-center" id="test">
+        <section class="flex flex-col items-center justify-center shrink m-10" id="test">
             <h1 class="text-5xl font-bold text-center m-5">
                 Die perfekte Leinwand um etwas Einzigartiges zu erschaffen!
             </h1>
             <button class="btn" onclick="randomFunction()">Probiers aus! ^^</button>
-        </div>
+        </section>
     </div>
 
 
+
+
+
     <main class="container mx-auto p-10">
-
-
 
         <section>
             <div class="flex flex-col items-center justify-center">
@@ -58,7 +56,7 @@
 
         </section>
 
-        <?php include 'res/comps/contact_form.php'; ?>
+        <?php include 'res/php/contact_form.php'; ?>
 
 
     </main>
@@ -68,7 +66,7 @@
 
 
 
-<?php include 'res/comps/footer.php'; ?>
+<?php include 'res/php/footer.php'; ?>
 
 
 </html>

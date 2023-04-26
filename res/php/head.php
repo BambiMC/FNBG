@@ -11,8 +11,10 @@
             document.documentElement.setAttribute("color-mode", "dark");
         }
     </script>
-    <script src="res/libs/theme-toggle.js" defer></script>
-    <script src="res/libs/functions.js" defer></script>
+    <script src="res/js/theme-toggle.js" defer></script>
+    <script src="res/js/functions.js" defer></script>
+    <script src="res/js/anime.min.js"></script>
+
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,8 +23,8 @@
 
     <!-- Include tailwindcss-->
     <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
-    <link rel="stylesheet" href="res/libs/fnbg.css">
-    <link rel="stylesheet" href="res/libs/fnbgDefaults.css">
+    <link rel="stylesheet" href="res/css/fnbg.css">
+    <link rel="stylesheet" href="res/css/fnbgDefaults.css">
     <link rel="icon" type="image/x-icon" href="res/favicon.ico">
 
     <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>

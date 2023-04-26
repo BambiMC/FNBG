@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html color-mode="light" lang="en">
 
-<?php include 'res/comps/head.php'; ?>
+<?php include 'res/php/head.php'; ?>
 
 <body>
 
-    <?php include 'res/comps/header.php'; ?>
+    <?php include 'res/php/header.php'; ?>
 
     <main class="container py-5" id="fnbg-content">
 
@@ -13,7 +13,7 @@
 
     </main>
 
-    <?php include 'res/comps/footer.php'; ?>
+    <?php include 'res/php/footer.php'; ?>
 
 </body>
 
