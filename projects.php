@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html color-mode="light" lang="en">
 
-<!-- TODO Ideen: OreFusion, DSAG Artikel, BA, MID, eZMatics, Ganzer BA, FNBG.de -->
+<!-- TODO Ideen: OreFusion, DSAG Artikel, BA, MID, eZMatics, Ganzer BA, FNBG.de, Github -->
 
 <?php include 'res/php/head.php'; ?>
 
