@@ -3,11 +3,11 @@
 
 <!-- TODO Ideen: OreFusion, DSAG Artikel, BA, MID, eZMatics, Ganzer BA, FNBG.de, Github -->
 
-<?php include 'res/php/head.php'; ?>
+<?php include(__DIR__ . '/res/php/head.php');?>
 
 <body class="z-0">
 
-    <?php include 'res/php/header.php'; ?>
+    <?php include(__DIR__ . '/res/php/header.php');?>
 
     <main class="container mx-auto p-10">
 
@@ -46,7 +46,7 @@
 
 
 
-<?php include 'res/php/footer.php'; ?>
+<?php include(__DIR__ . '/res/php/footer.php');?>
 
 
 </html>
