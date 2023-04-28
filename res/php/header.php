@@ -7,6 +7,7 @@
       <a href="./projects.php" class="px-5 py-3 text-purple">Projekte</a>
       <a href="mailto:me@fnbg.de" class="px-5 py-3 text-purple">me@fnbg.de</a>
       <a href="https://www.linkedin.com/in/fabian-berger-nbg/" class="px-5 py-3 text-purple">LinkedIn</a>
+      <a href="https://dev.fnbg.de/" class="px-5 py-3 text-purple">Dev-Branch</a>     
 
     </div>
     <div>
@@ -37,13 +38,13 @@
 
   </div>
 
-
   <!-- mobile menu -->
   <div class="order-last hidden md:hidden" id="mobile-menu">
     <div class="flex flex-row">
       <a href="./projects.php" class="block px-3 py-2 rounded-md">Projekte</a>
       <a href="mailto:me@fnbg.de" class="block px-3 py-2 rounded-md">me@fnbg.de</a>
       <a href="https://www.linkedin.com/in/fabian-berger-nbg/" class="block px-3 py-2 rounded-md">LinkedIn</a>
+      <a href="https://dev.fnbg.de/" class="block px-3 py-2 rounded-md">Dev-Branch</a>      
     </div>
   </div>
 </nav>

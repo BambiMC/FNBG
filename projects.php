@@ -14,22 +14,22 @@
 
         <div class="grid grid-cols-2 md:grid-cols-3 gap-5 my-20">
             <div>
-                <a href="./project.php" id="project">
+                <a href="./projects/project.php" id="project">
                     <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
                 </a>
             </div>
             <div>
-                <a href="./project.php" id="project">
+                <a href="./projects/project.php" id="project">
                     <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
                 </a>
             </div>
             <div>
-                <a href="./project.php" id="project">
+                <a href="./projects/project.php" id="project">
                     <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
                 </a>
             </div>
             <div>
-                <a href="./project.php" id="project">
+                <a href="./projects/project.php" id="project">
                     <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
                 </a>
             </div>
