@@ -12,6 +12,7 @@
         }
     </script>
 
+
     <base href=""/>
 
     <script src="/res/js/theme-toggle.js" defer></script>
