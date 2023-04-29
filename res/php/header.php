@@ -8,7 +8,6 @@
       <a href="mailto:me@fnbg.de" class="px-5 py-3 text-purple">me@fnbg.de</a>
       <a href="https://www.linkedin.com/in/fabian-berger-nbg/" class="px-5 py-3 text-purple">LinkedIn</a>
       <a href="https://dev.fnbg.de/" class="px-5 py-3 text-purple">Dev-Branch</a>  
-         
     </div>
     <div>
       <button class="btn switch-theme-btn">
