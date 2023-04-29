@@ -1,7 +1,7 @@
 <nav class="px-4 py-1 z-10 fixed w-full">
   <div class="flex items-center justify-between">
     <a href="<?php __DIR__ ?>./index.php">
-      <img class="h-16" src="<?php __DIR__ ?>res/svg/fnbg-logo7.svg" alt="" id="logo">
+      <img class="h-16" src="/res/svg/fnbg-logo7.svg" alt="" id="logo">
     </a>
     <div class="hidden gap-2 md:flex">
       <a href="projects.php" class="px-5 py-3 text-purple">Projekte</a>

@@ -12,12 +12,14 @@
         }
     </script>
 
-    <script src="<?php __DIR__ ?>res/js/theme-toggle.js" defer></script>
-    <script src="<?php __DIR__ ?>res/js/functions.js" defer></script>
-    <script src="<?php __DIR__ ?>res/js/anime.min.js"></script>
-    <link rel="stylesheet" href="<?php __DIR__ ?>res/css/fnbg.css">
-    <link rel="stylesheet" href="<?php __DIR__ ?>res/css/fnbgDefaults.css">
-    <link rel="icon" type="image/x-icon" href="<?php __DIR__ ?>res/favicon.ico">
+    <base href=""/>
+
+    <script src="/res/js/theme-toggle.js" defer></script>
+    <script src="/res/js/functions.js" defer></script>
+    <script src="/res/js/anime.min.js"></script>
+    <link rel="stylesheet" href="/res/css/fnbg.css">
+    <link rel="stylesheet" href="/res/css/fnbgDefaults.css">
+    <link rel="icon" type="image/x-icon" href="/res/favicon.ico">
 
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
