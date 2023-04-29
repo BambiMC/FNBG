@@ -15,6 +15,7 @@
 
     <base href=""/>
 
+    
     <script src="/res/js/theme-toggle.js" defer></script>
     <script src="/res/js/functions.js" defer></script>
     <script src="/res/js/anime.min.js"></script>
