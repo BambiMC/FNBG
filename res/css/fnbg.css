@@ -74,42 +74,6 @@ button:hover {
   border: 1px solid var(--bg-accent2);
 }
 
-/*.btn-outline-purple {
-  color: var(--fnbg-purple);
-  border-color: var(--fnbg-purple);
-}
-
-.btn-outline-purple:hover {
-  color: #000;
-  background-color: var(--fnbg-purple);
-  border-color: var(--fnbg-purple);
-}
-
-.btn-orange {
-  color: var(--fnbg-orange);
-  background-color: var(--bg-accent2);
-  border-color: #181818;
-}
-
-.btn-orange:hover,
-btn-orange-darker:hover {
-  color: var(--fnbg-orange);
-  background-color: var(--bg-main);
-  border-color: var(--fnbg-orange);
-}
-
-.btn-orange-darker {
-  color: var(--fnbg-orange);
-  background-color: var(--bg-main);
-  border-color: #202020;
-}
-
-.btn-orange-darker:hover {
-  color: var(--fnbg-orange);
-  background-color: var(--bg-main);
-  border-color: var(--fnbg-orange);
-}*/
-
 nav,
 section,
 footer {
