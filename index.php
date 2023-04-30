@@ -9,17 +9,27 @@
 <!--TODO Bilder Gallerie impl. -->
 
 
-<?php include(__DIR__ . '/res/php/head.php');?>
+<?php include(__DIR__ . '/res/php/head.php'); ?>
 
 <body class="z-0">
 
-    <?php include(__DIR__ . '/res/php/header.php');?>
+    <?php include(__DIR__ . '/res/php/header.php'); ?>
 
     <div class="container2 unselectable" style="position: fixed">
 
         <?php
         $symbols = [
-            "□", "█", "▲", "◊", "░", "▒", "▓", "▼", "◉", "◑", "◖",
+            "□",
+            "█",
+            "▲",
+            "◊",
+            "░",
+            "▒",
+            "▓",
+            "▼",
+            "◉",
+            "◑",
+            "◖",
         ];
         for ($i = 0; $i < 20; $i++) {
             $left = rand(0, 100) . "%";
@@ -31,33 +41,17 @@
         ?>
     </div>
 
-    <div class="flex items-center justify-center h-full h-screen relative ">
-
-        <section class="flex flex-col items-center justify-center shrink m-10" id="test">
+    <div class="flex items-center justify-center h-screen relative max-w-screen-md mx-auto">
+        <section class="flex flex-col items-center justify-center shrink">
             <h1 class="text-5xl font-bold text-center m-5">
                 Die perfekte Leinwand um etwas Einzigartiges zu erschaffen!
             </h1>
-            <button class="btn" onclick="randomFunction()">Probiers aus! ^^</button>
+            <button class="btn m-5" onclick="randomFunction()">Probiers aus! ^^</button>
         </section>
     </div>
 
 
-
-
-
     <main class="container mx-auto p-10">
-
-        <section>
-            <div class="flex flex-col items-center justify-center">
-                <h1 class="text-5xl font-bold text-center"></h1>
-                <p class="text-2xl text-center">Here you can find some information about me and my projects.</p>
-            </div>
-
-
-        </section>
-
-        <?php include 'res/php/contact_form.php'; ?>
-
 
     </main>
 
@@ -66,7 +60,7 @@
 
 
 
-<?php include(__DIR__ . '/res/php/footer.php');?>
+<?php include(__DIR__ . '/res/php/footer.php'); ?>
 
 
 </html>

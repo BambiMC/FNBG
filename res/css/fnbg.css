@@ -1,84 +1,5 @@
-/* * {
-  outline: 1px solid coral !important;
-} */
-
-/**Text*/
-
-a {
-  display: inline-block;
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-}
-
-.text-purple {
-  color: var(--fnbg-purple);
-}
-
-a:hover,
-button:hover {
-  color: #909090 !important;
-}
-
-img:not(#logo) {
-  border-radius: var(--radius-big) !important;
-}
-
-#logo:hover,
-a:hover,
-button:hover,
-#project:hover {
-  transform: scale(1.08);
-}
-
 .container2 {
-  position: relative;
   height: 100vh;
-}
-
-p {
-  font-size: 100px; /* Set a large font size */
-  max-width: 100%; /* Set the maximum width of the text to be the width of the div */
-  max-height: 100%;
-}
-
-.symbol {
-  position: fixed;
-  animation: floating 15s ease-in-out infinite;
-  color: var(--bg-accent);
-
-  width: 150px;
-  height: 150px;
-  border-radius: 50%;
-  display: flex;
-  align-items: center; /* Center vertically */
-  justify-content: center;
-}
-
-button {
-  font-size: 16px;
-  font-weight: bold;
-  letter-spacing: 1.5px;
-  border: 1px solid var(--bg-accent);
-  background-color: var(--bg-accent);
-  color: var(--cursor);
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-small);
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-}
-
-button:hover {
-  background-color: var(--bg-accent2);
-  color: var(--cursor);
-  border: 1px solid var(--bg-accent2);
-}
-
-nav,
-section,
-footer {
-  background-color: var(--bg-accent);
-  box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.2);
 }
 
 body {
@@ -87,35 +8,40 @@ body {
   flex-direction: column;
 }
 
-.bg-accent2 {
-  background-color: var(--bg-accent2);
+.hover-scale:hover {
+  transform: scale(1.08);
 }
 
-.text-orange {
-  --bs-text-opacity: 1;
-  color: var(--fnbg-orange) !important;
+a {
+  font-size: 14px;
+  color: var(--fnbg-purple) !important;
+}
+/* TODO Muss ich noch verbessern und mit ner Variable versehen*/
+a:hover, button:hover {
+    color: #909090 !important;
 }
 
-input,
-textarea {
-  background-color: var(--bg-accent2) !important;
-  border-color: var(--bg-accent) !important;
-  caret-color: var(--cursor) !important;
+footer {
+  color: var(--fnbg-purple);
 }
 
-input,
-select,
-textarea,
-textarea:focus,
-input:focus {
-  color: var(--cursor) !important;
+p {
+  font-size: 200px;
 }
 
-button,
-div,
-input,
-textarea {
-  border-radius: var(--radius-small);
+p,label {
+  max-width: 100%;
+  color: var(--fnbg-orange);
+}
+
+a, button {
+  font-weight: bold;
+  letter-spacing: 1.5px;
+  color: var(--text-orange);
+}
+
+img:not(#logo) {
+  border-radius: var(--radius-big);
 }
 
 h1 {
@@ -123,73 +49,31 @@ h1 {
   font-weight: 700;
 }
 
-.rainbow-text {
-  animation: floating 15s ease-in-out infinite,
-    rainbow-text 10s ease-in-out infinite,
-    rotate 5s linear infinite;
+nav, section, footer {
+  background-color: var(--bg-accent);
+  box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.2);
 }
 
-@keyframes rainbow-text {
-  0% {
-    color: red;
-    /* box-shadow: 0 0 0px 20px violet inset, 0 0 0px 20px violet; */
-    /* border-color: violet; */
-  }
-  14% {
-    color: orange;
-    /* box-shadow: 0 0 0px 20px red inset, 0 0 0px 20px red; */
-    /* border-color: orange; */
-  }
-  28% {
-    color: yellow;
-    /* box-shadow: 0 0 0px 20px orange inset, 0 0 0px 20px orange; */
-    /* border-color: orange; */
-  }
-  42% {
-    color: green;
-    /* box-shadow: 0 0 0px 20px yellow inset, 0 0 0px 20px yellow; */
-    /* border-color: yellow; */
-  }
-  56% {
-    color: blue;
-    /* box-shadow: 0 0 0px 20px green inset, 0 0 0px 20px green; */
-    /* border-color: green;*/
-  }
-  70% {
-    color: indigo;
-    /* box-shadow: 0 0 0px 20px blue inset, 0 0 0px 20px blue;*/
-    /* border-color: blue;*/
-  }
-  84% {
-    color: violet;
-    /* box-shadow: 0 0 0px 20px indigo inset, 0 0 0px 20px indigo;*/
-    /* border-color: indigo;*/
-  }
-  100% {
-    color: red;
-    /* box-shadow: 0 0 0px 20px violet inset, 0 0 0px 20px violet;*/
-    /* border-color: violet;*/
-  }
+input, select, textarea {
+  background-color: var(--bg-accent2);
+  border-color: var(--bg-accent);
+  caret-color: var(--cursor);
+  color: var(--cursor);
+  border-radius: var(--radius-small);
 }
 
-@keyframes floating {
-  0% {
-    transform: translateY(0);
-  }
-  50% {
-    transform: translateY(-50%);
-  }
-  100% {
-    transform: translateY(0);
-  }
+
+/* Button */
+.btn {
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-small);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: var(--fnbg-orange);
 }
-
-@keyframes rotate {
-  from {
-    transform: rotate(0deg);
-  }
-
-  to {
-    transform: rotate(360deg);
-  }
+.btn:hover {
+  color: #909090;
+  background-color: var(--bg-accent2);
+  border-color: var(--bg-accent2);
 }
