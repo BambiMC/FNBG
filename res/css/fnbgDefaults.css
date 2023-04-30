@@ -6,8 +6,7 @@
   --fnbg-orange: #fb923c;
   --bg-body: #242424;
   --bg-main: #242424;
-  --bg-accent: #181818;
-  --bg-accent2: #303030;
+  --bg-accent: #303030;
 }
 
 :root[color-mode="light"] {
@@ -18,8 +17,7 @@
   --fnbg-orange: #8e3dcf;
   --bg-body: #eee3ff;
   --bg-main: #eee3ff;
-  --bg-accent: #d3d0df;
-  --bg-accent2: #c5bcf3;
+  --bg-accent: #c5bcf3;
 }
 
 :root[color-mode="light"] .dark {

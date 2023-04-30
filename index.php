@@ -15,7 +15,7 @@
 
     <?php include(__DIR__ . '/res/php/header.php'); ?>
 
-    <div class="container2 unselectable" style="position: fixed">
+    <div class="unselectable" style="position: fixed">
 
         <?php
         $symbols = [

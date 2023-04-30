@@ -8,18 +8,27 @@ body {
   flex-direction: column;
 }
 
-.hover-scale:hover {
-  transform: scale(1.08);
+
+/* Button */
+.btn {
+  font-size: 14px;
+  padding: 0.5rem 1rem;
+  border-radius: var(--radius-small);
+  transition: all 0.2s ease-in-out;
+  cursor: pointer;
+  color: var(--fnbg-orange);
+}
+.btn:hover {
+  color: #909090;
+  background-color: var(--bg-accent);
+  border-color: var(--bg-accent);
 }
 
 a {
   font-size: 14px;
   color: var(--fnbg-purple) !important;
 }
-/* TODO Muss ich noch verbessern und mit ner Variable versehen*/
-a:hover, button:hover {
-    color: #909090 !important;
-}
+
 
 footer {
   color: var(--fnbg-purple);
@@ -55,25 +64,17 @@ nav, section, footer {
 }
 
 input, select, textarea {
-  background-color: var(--bg-accent2);
+  background-color: var(--bg-accent);
   border-color: var(--bg-accent);
   caret-color: var(--cursor);
   color: var(--cursor);
   border-radius: var(--radius-small);
 }
 
-
-/* Button */
-.btn {
-  font-size: 14px;
-  padding: 0.5rem 1rem;
-  border-radius: var(--radius-small);
-  transition: all 0.2s ease-in-out;
-  cursor: pointer;
-  color: var(--fnbg-orange);
-}
-.btn:hover {
-  color: #909090;
-  background-color: var(--bg-accent2);
-  border-color: var(--bg-accent2);
+#logo:hover,
+a:hover,
+button:hover,
+#project:hover {
+  transform: scale(1.08) !important;
+  color: #909090 !important;
 }

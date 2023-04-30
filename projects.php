@@ -3,50 +3,46 @@
 
 <!-- TODO Ideen: OreFusion, DSAG Artikel, BA, MID, eZMatics, Ganzer BA, FNBG.de, Github -->
 
-<?php include(__DIR__ . '/res/php/head.php');?>
+<?php include(__DIR__ . '/res/php/head.php'); ?>
 
 <body class="z-0">
 
-    <?php include(__DIR__ . '/res/php/header.php');?>
+    <?php include(__DIR__ . '/res/php/header.php'); ?>
 
     <main class="container mx-auto p-10">
 
 
         <div class="grid grid-cols-2 md:grid-cols-3 gap-5 my-20">
             <div>
-                <a href="./projects/project.php" id="project">
-                    <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
+                <a href="./projects/project.php">
+                    <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="" id="project">
                 </a>
             </div>
             <div>
-                <a href="./projects/project.php" id="project">
-                    <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
+                <a href="./projects/project.php">
+                    <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="" id="project">
                 </a>
             </div>
             <div>
-                <a href="./projects/project.php" id="project">
-                    <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
+                <a href="./projects/project.php">
+                    <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="" id="project">
                 </a>
             </div>
             <div>
-                <a href="./projects/project.php" id="project">
-                    <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
+                <a href="./projects/project.php">
+                    <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="" id="project">
                 </a>
             </div>
         </div>
 
 
-
-
-
     </main>
-
 
 </body>
 
 
 
-<?php include(__DIR__ . '/res/php/footer.php');?>
+<?php include(__DIR__ . '/res/php/footer.php'); ?>
 
 
 </html>
