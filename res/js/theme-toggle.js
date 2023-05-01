@@ -1,4 +1,4 @@
-if (window.CSS && CSS.supports("color", "var(--bg-main)")) {
+if (window.CSS && CSS.supports("color", "var(--bg-body)")) {
   var toggleColorMode = function toggleColorMode(e) {
     if (document.documentElement.getAttribute("color-mode") != "light") {
       document.documentElement.setAttribute("color-mode", "light");

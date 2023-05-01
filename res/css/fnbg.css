@@ -73,8 +73,7 @@ input, select, textarea {
 
 #logo:hover,
 a:hover,
-button:hover,
-#project:hover {
+button:hover {
   transform: scale(1.08) !important;
   color: #909090 !important;
 }

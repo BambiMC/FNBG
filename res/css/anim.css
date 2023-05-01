@@ -87,3 +87,11 @@
     transform: rotate(360deg);
   }
 }
+
+
+.objects {
+          position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+}

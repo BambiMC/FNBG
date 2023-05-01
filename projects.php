@@ -1,9 +1,13 @@
 <!DOCTYPE html>
 <html color-mode="light" lang="en">
 
-<!-- TODO Ideen: OreFusion, DSAG Artikel, BA, MID, eZMatics, Ganzer BA, FNBG.de, Github -->
+<!-- TODO Ideen: OreFusion-LINK, DSAG Artikel-SEITE, BA-SEITE, MID-SEITE, Matics-SEITE, FNBG.de-SEITE, Github-LINK -->
+<!-- Parallax einbauen für die Projektseiten -->
 
-<?php include(__DIR__ . '/res/php/head.php'); ?>
+
+<!-- <?php include(__DIR__ . '/res/php/head.php'); ?> -->
+
+
 
 <body class="z-0">
 
@@ -13,26 +17,40 @@
 
 
         <div class="grid grid-cols-2 md:grid-cols-3 gap-5 my-20">
-            <div>
-                <a href="./projects/project.php">
-                    <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="" id="project">
-                </a>
-            </div>
-            <div>
-                <a href="./projects/project.php">
-                    <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="" id="project">
-                </a>
-            </div>
-            <div>
-                <a href="./projects/project.php">
-                    <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="" id="project">
-                </a>
-            </div>
-            <div>
-                <a href="./projects/project.php">
-                    <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="" id="project">
-                </a>
-            </div>
+
+            <a href="./projects/ba.php">
+                <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
+            </a>
+
+            <a href=" ./projects/dsag.php">
+                <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
+            </a>
+
+            <a href=" ./projects/fnbg.php">
+                <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
+            </a>
+
+            <a href=" ./projects/matics.php">
+                <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
+            </a>
+
+            <a href=" ./projects/mid.php">
+                <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
+            </a>
+
+            <a href="https://github.com/BambiMC/OreFusion">
+                <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="OreFusion Mod - Minecraft">
+            </a>
+
+            <a href="https://github.com/BambiMC">
+                <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="GitHub">
+            </a>
+
+            <a href=" ./projects/project.php">
+                <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
+            </a>
+
+
         </div>
 
 

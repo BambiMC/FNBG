@@ -55,12 +55,8 @@
 
     </main>
 
-
 </body>
 
-
-
 <?php include(__DIR__ . '/res/php/footer.php'); ?>
-
 
 </html>

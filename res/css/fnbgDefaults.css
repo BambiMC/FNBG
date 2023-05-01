@@ -5,7 +5,6 @@
   --fnbg-purple: #8774e1;
   --fnbg-orange: #fb923c;
   --bg-body: #242424;
-  --bg-main: #242424;
   --bg-accent: #303030;
 }
 
@@ -16,7 +15,6 @@
   --fnbg-purple: #303030;
   --fnbg-orange: #8e3dcf;
   --bg-body: #eee3ff;
-  --bg-main: #eee3ff;
   --bg-accent: #c5bcf3;
 }
 
@@ -28,7 +26,7 @@
   display: none;
 }
 
-* {
+*:hover, #logo {
   transition: all 0.25s ease;
 }
 
