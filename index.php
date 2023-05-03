@@ -54,7 +54,8 @@
                     if (xhr.status === 200) {
                         var outputDiv = document.getElementById("effect-container");
                         outputDiv.innerHTML = xhr.response;
-
+                        // Evaluate the script
+                        eval(outputDiv.getElementsByTagName('script')[0].innerHTML);
                     } else {
                         console.log("Error: " + xhr.status);
                     }
