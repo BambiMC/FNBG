@@ -5,7 +5,7 @@
 <!-- Parallax einbauen für die Projektseiten -->
 
 
-<!-- <?php include(__DIR__ . '/res/php/head.php'); ?> -->
+<?php include(__DIR__ . '/res/php/head.php'); ?>
 
 
 
@@ -18,31 +18,31 @@
 
         <div class="grid grid-cols-2 md:grid-cols-3 gap-5 my-20">
 
-            <a href="./projects/ba.php">
+            <a href="./projects/ba.php" id="project">
                 <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
             </a>
 
-            <a href=" ./projects/dsag.php">
+            <a href=" ./projects/dsag.php" id="project">
                 <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
             </a>
 
-            <a href=" ./projects/fnbg.php">
+            <a href=" ./projects/fnbg.php" id="project">
                 <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
             </a>
 
-            <a href=" ./projects/matics.php">
+            <a href=" ./projects/matics.php" id="project">
                 <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
             </a>
 
-            <a href=" ./projects/mid.php">
+            <a href=" ./projects/mid.php" id="project">
                 <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="">
             </a>
 
-            <a href="https://github.com/BambiMC/OreFusion">
+            <a href="https://github.com/BambiMC/OreFusion" id="project">
                 <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="OreFusion Mod - Minecraft">
             </a>
 
-            <a href="https://github.com/BambiMC">
+            <a href="https://github.com/BambiMC" id="project">
                 <img class="h-auto max-w-full" src="res/imgs/code_background.png" alt="GitHub">
             </a>
 

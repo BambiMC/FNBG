@@ -11,22 +11,22 @@ function randomFunction() {
 }
 
 function randomFunction2() {
-    const symbols = ["□", "█", "▲", "◊", "░", "▒", "▓", "▼", "◉", "◑", "◖"];
-    const container = document.querySelector('.container2');
-    container.innerHTML = '';
-    for (let i = 0; i < 20; i++) {
-        const left = Math.random() * 100 + "%";
-        const top = Math.random() * 100 + "%";
-        const delay = (Math.random() * -15) + "s";
-        const symbol = symbols[Math.floor(Math.random() * symbols.length)];
-        const div = document.createElement('div');
-        div.classList.add('symbol');
-        div.style.left = left;
-        div.style.top = top;
-        div.style.animationDelay = delay;
-        div.innerHTML = `<p>${symbol}</p>`;
-        container.appendChild(div);
-    }
+  const symbols = ["□", "█", "▲", "◊", "░", "▒", "▓", "▼", "◉", "◑", "◖"];
+  const container = document.querySelector('.container2');
+  container.innerHTML = '';
+  for (let i = 0; i < 20; i++) {
+    const left = Math.random() * 100 + "%";
+    const top = Math.random() * 100 + "%";
+    const delay = (Math.random() * -15) + "s";
+    const symbol = symbols[Math.floor(Math.random() * symbols.length)];
+    const div = document.createElement('div');
+    div.classList.add('symbol');
+    div.style.left = left;
+    div.style.top = top;
+    div.style.animationDelay = delay;
+    div.innerHTML = `<p>${symbol}</p>`;
+    container.appendChild(div);
+  }
 }
 
 function sendContact() {
@@ -48,7 +48,7 @@ function sendContact() {
       success: function (data) {
         $("#mail-status").html(data);
       },
-      error: function () {},
+      error: function () { },
     });
   }
 }

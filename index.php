@@ -15,38 +15,14 @@
 
     <?php include(__DIR__ . '/res/php/header.php'); ?>
 
-    <div class="unselectable" style="position: fixed">
-
-        <?php
-        $symbols = [
-            "□",
-            "█",
-            "▲",
-            "◊",
-            "░",
-            "▒",
-            "▓",
-            "▼",
-            "◉",
-            "◑",
-            "◖",
-        ];
-        for ($i = 0; $i < 20; $i++) {
-            $left = rand(0, 100) . "%";
-            $top = rand(0, 100) . "%";
-            $delay = rand(-15, 0) . "s";
-            $symbol = $symbols[array_rand($symbols)];
-            echo '<div class="symbol" style="left: ' . $left . '; top: ' . $top . '; animation-delay: ' . $delay . '"; border-radius: 50%><p>' . $symbol . '</p></div>';
-        }
-        ?>
-    </div>
+    <div class="unselectable" style="position: fixed" id="effect-container"></div>
 
     <div class="flex items-center justify-center h-screen relative max-w-screen-md mx-auto">
         <section class="flex flex-col items-center justify-center shrink">
             <h1 class="text-5xl font-bold text-center m-5">
                 Die perfekte Leinwand um etwas Einzigartiges zu erschaffen!
             </h1>
-            <button class="btn m-5" onclick="randomFunction()">Probiers aus! ^^</button>
+            <button class="btn m-5" id="changeEffectButton">Probiers aus! ^^</button>
         </section>
     </div>
 
@@ -54,6 +30,47 @@
     <main class="container mx-auto p-10">
 
     </main>
+
+    <script>
+        let current_effect;
+
+        function getRandomEffect() {
+            let effect;
+            do {
+                effect = Math.floor(Math.random() * 3);
+            } while (effect === current_effect);
+            return effect;
+        }
+
+        function updateEffectContainer(effect) {
+            var xhr = new XMLHttpRequest();
+            const url = 'effect' + effect + '.php';
+
+            var method = "GET";
+            xhr.open(method, url, true);
+            xhr.responseType = "text";
+            xhr.onload = function () {
+                if (xhr.readyState === xhr.DONE) {
+                    if (xhr.status === 200) {
+                        var outputDiv = document.getElementById("effect-container");
+                        outputDiv.innerHTML = xhr.response;
+
+                    } else {
+                        console.log("Error: " + xhr.status);
+                    }
+                }
+            };
+            xhr.send();
+        }
+
+        document.getElementById("changeEffectButton").addEventListener("click", function () {
+            current_effect = getRandomEffect();
+            updateEffectContainer(current_effect);
+        });
+
+        current_effect = getRandomEffect();
+        updateEffectContainer(current_effect);
+    </script>
 
 </body>
 
