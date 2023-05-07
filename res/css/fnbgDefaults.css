@@ -4,8 +4,8 @@
   --radius-small: 0;
   --fnbg-purple: #8774e1;
   --fnbg-orange: #fb923c;
-  --bg-body: #242424;
-  --bg-accent: #303030;
+  --bg-body: #404040;
+  --bg-accent: #222222;
 }
 
 :root[color-mode="light"] {

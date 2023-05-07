@@ -1,12 +1,13 @@
 <nav class="px-4 py-1 z-10 fixed w-full">
   <div class="flex items-center justify-between">
     <a href="/index.php">
-      <img class="h-16" src="/res/svg/fnbg-logo7.svg" alt="" id="logo">
+      <img class="h-16" src="/res/svg/fnbg-logo8.svg" alt="" id="logo">
     </a>
     <div class="hidden gap-2 md:flex">
       <a href="projects.php" class="px-5 py-3">Projekte</a>
       <a href="mailto:me@fnbg.de" class="px-5 py-3 ">me@fnbg.de</a>
       <a href="https://www.linkedin.com/in/fabian-berger-nbg/" class="px-5 py-3">LinkedIn</a>
+      <a href="imprint.php" class="px-5 py-3">Impressum</a>
       <?php
       $hostname = gethostname();
       if ($hostname == 'dev.fnbg.de') {
