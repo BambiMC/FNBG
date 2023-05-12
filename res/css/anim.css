@@ -113,3 +113,22 @@
     background-position: -200% center;
   }
 }
+
+bodyZukunft {
+  background-color: #FFFFFF !important;
+  /* set the background color to white */
+  background-image: linear-gradient(to right,
+      #FAD0C4,
+      #FFE5D9,
+      #FFF2E6,
+      #F9F8FC,
+      #E6F7FF,
+      #D4EEFC,
+      #BCE4F9,
+      #A3D9F5,
+      #7FCBF0,
+      #4EBDEB,
+      #00AFEB,
+      #009EDB) !important;
+  /* use a linear gradient to create the waves */
+}

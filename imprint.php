@@ -25,14 +25,10 @@
         <h2 class="text-xl mt-12 mb-2">Redaktionell verantwortlich</h2>
         <h3 class="text-l">Fabian Berger</h3>
 
-
     </main>
 
 </body>
 
-
-
 <?php include(__DIR__ . '/res/php/footer.php'); ?>
-
 
 </html>
