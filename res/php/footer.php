@@ -3,7 +3,6 @@
         Fabian Berger<br>Ratiborer Straße 2<br>91058 Erlangen
     </div>
     <div class="my-auto text-center">
-        © 2023 Copyright:
-        <a class="" href="https://fnbg.de/">fnbg.de</a>
+        © 2023 by Fabian Berger
     </div>
 </footer>
