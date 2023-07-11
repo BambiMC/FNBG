@@ -4,6 +4,7 @@
       <img class="h-16" src="/res/svg/fnbg-logo8.svg" alt="" id="logo">
     </a>
     <div class="hidden gap-2 md:flex">
+      <a href="https://fnbg.de/res/Lebenslauf-Fabian-Berger.pdf" class="px-5 py-3">Lebenslauf</a>
       <a href="projects.php" class="px-5 py-3">Projekte</a>
       <a href="mailto:me@fnbg.de" class="px-5 py-3 ">me@fnbg.de</a>
       <a href="https://www.linkedin.com/in/fabian-berger-nbg/" class="px-5 py-3">LinkedIn</a>
