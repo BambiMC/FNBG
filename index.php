@@ -22,7 +22,8 @@
             <h1 class="text-5xl font-bold text-center m-5">
                 Die perfekte Leinwand um etwas Einzigartiges zu erschaffen!
             </h1>
-            <button class="btn m-5" id="changeEffectButton">Probiers aus! ^^</button>
+            <!-- <button class="btn m-5" id="changeEffectButton">Probiers aus! ^^</button> -->
+            <button class="btn m-5" id="changeEffectButton" style="display: none;">Probiers aus! ^^</button>
         </section>
     </div>
 
@@ -37,7 +38,8 @@
         function getRandomEffect() {
             let effect;
             do {
-                effect = Math.floor(Math.random() * 3);
+                // effect = Math.floor(Math.random() * 3);
+                effect = 1;
             } while (effect === current_effect);
             return effect;
         }
@@ -45,7 +47,7 @@
         function updateEffectContainer(effect) {
             var xhr = new XMLHttpRequest();
             const url = 'effect' + effect + '.php';
-
+            console.log();
             var method = "GET";
             xhr.open(method, url, true);
             xhr.responseType = "text";
