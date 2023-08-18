@@ -20,7 +20,7 @@
     <div class="flex items-center justify-center h-screen relative max-w-screen-md mx-auto">
         <section class="flex flex-col items-center justify-center shrink">
             <h1 class="text-5xl font-bold text-center m-5">
-                Die perfekte Leinwand um etwas Einzigartiges zu erschaffen!
+                Die perfekte Leinwand um etwas zu erschaffen, zum Beispiel eine Portfolio-Seite!
             </h1>
             <!-- <button class="btn m-5" id="changeEffectButton">Probiers aus! ^^</button> -->
             <button class="btn m-5" id="changeEffectButton" style="display: none;">Probiers aus! ^^</button>

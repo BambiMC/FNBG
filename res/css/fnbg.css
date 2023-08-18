@@ -34,7 +34,7 @@ footer {
   color: var(--fnbg-purple);
 }
 
-p {
+.symbol {
   font-size: 200px;
 }
 
@@ -86,3 +86,4 @@ button:hover {
   transform: scale(1.08) !important;
   color: #909090 !important;
 }
+
