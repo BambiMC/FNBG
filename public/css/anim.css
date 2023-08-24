@@ -1,0 +1,134 @@
+.symbol {
+  position: fixed;
+  animation: floating 15s ease-in-out infinite;
+  color: var(--fnbg-orange);
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  justify-content: center;
+}
+
+.rainbow-text {
+  animation: floating 15s ease-in-out infinite,
+    rainbow-text 10s ease-in-out infinite,
+    /* rotate 5s linear infinite; */
+}
+
+@keyframes rainbow-text {
+  0% {
+    color: red;
+    /* box-shadow: 0 0 0px 20px violet inset, 0 0 0px 20px violet; */
+    /* border-color: violet; */
+  }
+
+  14% {
+    color: orange;
+    /* box-shadow: 0 0 0px 20px red inset, 0 0 0px 20px red; */
+    /* border-color: orange; */
+  }
+
+  28% {
+    color: yellow;
+    /* box-shadow: 0 0 0px 20px orange inset, 0 0 0px 20px orange; */
+    /* border-color: orange; */
+  }
+
+  42% {
+    color: green;
+    /* box-shadow: 0 0 0px 20px yellow inset, 0 0 0px 20px yellow; */
+    /* border-color: yellow; */
+  }
+
+  56% {
+    color: blue;
+    /* box-shadow: 0 0 0px 20px green inset, 0 0 0px 20px green; */
+    /* border-color: green;*/
+  }
+
+  70% {
+    color: indigo;
+    /* box-shadow: 0 0 0px 20px blue inset, 0 0 0px 20px blue;*/
+    /* border-color: blue;*/
+  }
+
+  84% {
+    color: violet;
+    /* box-shadow: 0 0 0px 20px indigo inset, 0 0 0px 20px indigo;*/
+    /* border-color: indigo;*/
+  }
+
+  100% {
+    color: red;
+    /* box-shadow: 0 0 0px 20px violet inset, 0 0 0px 20px violet;*/
+    /* border-color: violet;*/
+  }
+}
+
+@keyframes floating {
+  0% {
+    transform: translateY(0);
+  }
+
+  50% {
+    transform: translateY(-50%);
+  }
+
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes rotate {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+
+.objects {
+          position: absolute;
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+}
+
+
+
+
+.rainbow-text2 {
+  background-image: linear-gradient(to right,red, violet, indigo, blue, green, yellow, orange, red);
+  background-size: 200% auto;
+  color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  animation: rainbow-text-animation 15s linear infinite;
+}
+
+@keyframes rainbow-text-animation {
+  to {
+    background-position: -200% center;
+  }
+}
+
+bodyZukunft {
+  background-color: #FFFFFF !important;
+  /* set the background color to white */
+  background-image: linear-gradient(to right,
+      #FAD0C4,
+      #FFE5D9,
+      #FFF2E6,
+      #F9F8FC,
+      #E6F7FF,
+      #D4EEFC,
+      #BCE4F9,
+      #A3D9F5,
+      #7FCBF0,
+      #4EBDEB,
+      #00AFEB,
+      #009EDB) !important;
+  /* use a linear gradient to create the waves */
+}
