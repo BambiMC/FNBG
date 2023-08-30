@@ -1,5 +1,7 @@
 {
-  "welcome": "Welcome to our website!",
-  "about": "About Us",
-  "contact": "Contact Us"
+  "resume": "Resume",
+  "projects": "Projects",
+  "linkedin": "LinkedIn",
+  "imprint": "Imprint",
+  "welcomeText": "Hey, I'm Fabian Berger, a 23 year old student from Germany. I'm currently studying computer science at the Friedrich Alexander University in Erlangen."
 }

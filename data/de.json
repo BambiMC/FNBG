@@ -1,5 +1,7 @@
 {
-  "welcome": "Willkommen auf unserer Webseite!",
-  "about": "Über uns",
-  "contact": "Kontakt"
+  "resume": "Lebenslauf",
+  "projects": "Projekte",
+  "linkedin": "LinkedIn",
+  "imprint": "Impressum",
+  "welcomeText": "Hey, Ich bin Fabian Berger, ein 23 jähriger Student aus Deutschland. Ich studiere momentan Informatik im Master an der Friedrich Alexander Universität in Erlangen."
 }
