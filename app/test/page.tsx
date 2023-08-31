@@ -10,8 +10,8 @@ const MyPage: React.FC = () => {
       <h1 className='mt-32'>User Information</h1>
       {data && (
         <div>
-          <p>Name: {data['welcomeText']}</p>
-          <p>Email: {data['imprint']}</p>
+          <p>{data['welcomeText']}</p>
+          <p>{data['imprint']}</p>
         </div>
       )}
     </div>
