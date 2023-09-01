@@ -1,6 +1,6 @@
 const Footer = () => {
   return (
-    <footer className="footer mt-auto flex justify-around py-3 relative">
+    <footer className="footer mt-auto flex justify-around py-3 relative" style={{ position: 'fixed', bottom: '0', width: '100%' }}>
       <div>
         Fabian Berger<br />
         Ratiborer Straße 2<br />
