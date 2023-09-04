@@ -61,6 +61,15 @@ body {
   overflow-x: hidden;
 }
 
+/* Define your "md" breakpoint */
+@media (min-width: 768px) {
+  /* CSS rules for screens smaller than or equal to 768px width (md size) */
+  /* Here, you can disable the scrollbar */
+  body {
+    overflow: hidden;
+  }
+}
+
 main {
   /*background-color: var(--bg-main);*/
   position: relative;
@@ -77,14 +86,14 @@ main {
   padding-bottom: 50px;
 }
 
-svg>line {
+svg > line {
   stroke: var(--fnbg-purple);
   fill: var(--fnbg-purple);
   color: var(--fnbg-purple);
 }
 
-#sun>path,
-#moon>path {
+#sun > path,
+#moon > path {
   fill: var(--fnbg-purple);
   color: var(--fnbg-purple);
   stroke: var(--fnbg-purple);
@@ -101,7 +110,6 @@ body {
   display: flex;
   flex-direction: column;
 }
-
 
 /* Button */
 .btn {
@@ -123,7 +131,6 @@ a {
   font-size: 14px;
   color: var(--fnbg-purple) !important;
 }
-
 
 footer {
   color: var(--fnbg-purple);
@@ -163,9 +170,7 @@ h3 {
   color: var(--fnbg-orange);
 }
 
-
 nav,
-section,
 footer {
   background-color: var(--bg-accent);
   box-shadow: 0 2px 5px hsla(0, 0%, 0%, 0.2);

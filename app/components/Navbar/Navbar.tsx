@@ -21,7 +21,7 @@ const handleLangButtonClick = (selectedLang: string) => {
 };
 
 const Navbar = () => {
-  const data = useLanguageData();
+  const data = useLanguageData("navbar");
 
   return (
     <nav className="px-4 py-1 z-20 fixed w-full">

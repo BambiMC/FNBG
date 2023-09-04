@@ -4,7 +4,7 @@ import { useLanguageData } from '@/data/languageLoader';
 import Triangle from '@/app/components/Triangle/Triangle';
 
 const Homepage: React.FC = () => {
-  const data = useLanguageData();
+  const data = useLanguageData("homepage");
 
   return (
     <div>
